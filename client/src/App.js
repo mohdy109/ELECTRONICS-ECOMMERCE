@@ -5,6 +5,7 @@ import Header from './components/headers/Header'
 import MainPages from './components/mainpages/Pages'
 
 
+
 function App() {
   return (
     <DataProvider>
@@ -12,6 +13,7 @@ function App() {
         <div className="App">
           <Header />
           <MainPages />
+          
         </div>
       </Router>
     </DataProvider>
