@@ -32,7 +32,7 @@ router.post('/upload',auth , authAdmin, (req, res) =>{
         cloudinary.v2.uploader.upload(file.tempFilePath, {folder: "test"}, async(err, result)=>{
             if(err) throw err;
 
-            removeTmp(file.tempFilePath)
+            
 
             res.json({public_id: result.public_id, url: result.secure_url})
         })
